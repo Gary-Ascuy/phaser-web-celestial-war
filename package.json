@@ -1,0 +1,14 @@
+{
+  "name": "web-celestial-battle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server . -p 3666"
+  },
+  "author": "Gary Ascuy <gary.ascuy@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
