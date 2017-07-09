@@ -4,7 +4,8 @@
   "description": "Web Celestial War",
   "main": "app.js",
   "scripts": {
-    "start": "babel src --watch --out-dir dist & http-server . -p 3666"
+    "build": "babel src --out-dir dist && webpack",
+    "start": "babel src --watch --out-dir cache & http-server . -p 3666"
   },
   "author": "Gary Ascuy <gary.ascuy@gmail.com>",
   "license": "MIT",
