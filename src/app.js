@@ -1,4 +1,4 @@
-import { log } from './logger.js'
+import { log } from './logger'
 
 const game = new Phaser.Game(800, 680, Phaser.AUTO, 'Web Celestial War', {preload, create})
 
