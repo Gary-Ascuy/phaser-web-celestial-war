@@ -1,13 +1,23 @@
 {
   "name": "web-celestial-war",
-  "version": "1.0.0",
   "description": "Web Celestial War",
-  "main": "app.js",
-  "scripts": {
-    "build": "babel src --out-dir dist && webpack",
-    "start": "babel src --watch --out-dir cache & http-server . -p 3666"
-  },
+  "version": "1.0.0",
   "author": "Gary Ascuy <gary.ascuy@gmail.com>",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "babel src --out-dir dist && webpack --optimize-minimize",
+    "start": "babel src --watch --out-dir cache & webpack --watch=true & http-server . -p 3666"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gary-Ascuy/phaser-web-celestial-war"
+  },
+  "keywords": [
+    "Game",
+    "JavaScript",
+    "Web Celestial War",
+    "Phaser 2.8.1"
+  ],
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.24.1",
