@@ -1,7 +1,10 @@
+import { log } from './logger.js'
 
 const game = new Phaser.Game(800, 680, Phaser.AUTO, 'Web Celestial War', {preload, create})
 
 function preload() {
+	log('Staring Web Celestial War')
+
 	game.load.crossOrigin='Anonymous'
 	game.load.bitmapFont('font',
 		'https://dl.dropboxusercontent.com/s/z4riz6hymsiimam/font.png?dl=0',
