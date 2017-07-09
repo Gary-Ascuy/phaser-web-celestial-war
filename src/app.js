@@ -1,7 +1,5 @@
-var game = new Phaser.Game(800, 680, Phaser.AUTO, 'Web Celestial War', {
-	preload: preload,
-	create: create
-})
+
+const game = new Phaser.Game(800, 680, Phaser.AUTO, 'Web Celestial War', {preload, create})
 
 function preload() {
 	game.load.crossOrigin='Anonymous'
@@ -14,7 +12,7 @@ function preload() {
 
 function create() {
   game.stage.backgroundColor = '#fff'
-  infoTxt=game.add.text(10, 30, 'Gary Ascuy')
+  const infoTxt = game.add.text(10, 30, 'Hello World')
 	game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
 	game.input.holdRate = 500
 }
